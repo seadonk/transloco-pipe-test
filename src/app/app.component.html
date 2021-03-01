@@ -1,0 +1,20 @@
+<h1>This is App!</h1>
+<br />
+
+<h2>translocoLocaleService pipes injected into l10nTestService</h2><br />
+<div> l10nTestService.decimalValue: {{ l10nTestService.decimalValue }}</div>
+<div> l10nTestService.percentValue: {{ l10nTestService.percentValue }}</div>
+<div> l10nTestService.dateValue: {{ l10nTestService.dateValue }}</div>
+<div> l10nTestService.currencyValue: {{ l10nTestService.currencyValue }}</div>
+
+<h2>translocoLocaleService LocalizeNumber / LocalizeDate injected into l10nTestService</h2><br />
+<div> l10nTestService.localizedDecimal: {{ l10nTestService.localizedDecimal }}</div>
+<div> l10nTestService.localizedPercent: {{ l10nTestService.localizedPercent }}</div>
+<div> l10nTestService.localizedDate: {{ l10nTestService.localizedDate }}</div>
+<div> l10nTestService.localizedCurrency: {{ l10nTestService.localizedCurrency }}</div>
+
+<h2>translocoLocaleService pipes in app.component template</h2><br />
+<div>translocoDecimal: {{ 1234567890 | translocoDecimal }}</div>
+<div>translocoPercent: {{ .99 | translocoPercent }}</div>
+<div>translocoDate: {{ date | translocoDate }}</div>
+<div>translocoCurrency: {{ 1000000 | translocoCurrency }}</div>
